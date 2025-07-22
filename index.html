@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruit Delivery</title>
+<link rel="stylesheet" href="style.css" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  
+</head>
+
+<body>
+  <div class="container">
+
+   
+    <nav class="navbar">
+      <h2>Food Express</h2>
+      <ul>
+        <li><a href="#favorites">Favorite Fruits</a></li>
+        <li><a href="#shop">Fruit Shop</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+      <button id="themeToggle">Toggle Dark Mode</button>
+    </nav>
+
+    <section class="hero" data-aos="fade-right">
+      <img src="images/hoe1.png" alt="Pineapple">
+      <div class="hero-text">
+        <h1>Fruit Delivery</h1>
+        <p>Delivering the freshest tropical fruits straight to your door—sweet, juicy, and full of flavor!</p>
+        <button>Order Now</button>
+      </div>
+    </section>
+
+    
+    <section class="top-products" data-aos="fade-up">
+      <div class="product-box" data-aos="zoom-in">
+        <img src="images/home2.jpg" alt="Orange">
+        <h3>Orange</h3>
+        <p>Rich in vitamin C and bursting with juice.</p>
+        <div class="price">395 EGP</div>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-box" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/water.jpg" alt="Melon">
+        <h3>Melon</h3>
+        <p>Hydrating and sweet—perfect for summer.</p>
+        <div class="price">495 EGP</div>
+        <button>Buy Now</button>
+      </div>
+    </section>
+
+    
+    <section class="favorites" id="favorites" data-aos="fade-left">
+      <h2>Favorite Fruits</h2>
+      <div class="favorites-grid">
+        <div class="fav-card" data-aos="flip-left">
+          <img src="images/fav_fru4.jpg" alt="Banana">
+          <div class="info">
+            <h3>Banana</h3>
+            <p>Rich in potassium and energy.</p>
+            <div class="actions">
+              <div class="qty">
+                <button>-</button><span>1</span><button>+</button>
+              </div>
+              <button class="buy">205 EGP</button>
+            </div>
+          </div>
+        </div>
+        <div class="fav-card" data-aos="flip-left" data-aos-delay="100">
+          <img src="images/fruite_4.jpg" alt="Grapes">
+          <div class="info">
+            <h3>Grapes</h3>
+            <p>Sweet and fresh grapes.</p>
+            <div class="actions">
+              <div class="qty"><button>-</button><span>1</span><button>+</button></div>
+              <button class="buy">209 EGP</button>
+            </div>
+          </div>
+        </div>
+        <div class="fav-card" data-aos="flip-left" data-aos-delay="200">
+          <img src="images/fruite_3.jpg" alt="Pineapple">
+          <div class="info">
+            <h3>Pineapple</h3>
+            <p>Tropical flavor you’ll love.</p>
+            <div class="actions">
+              <div class="qty"><button>-</button><span>1</span><button>+</button></div>
+              <button class="buy">325 EGP</button>
+            </div>
+          </div>
+        </div>
+        <div class="fav-card" data-aos="flip-left" data-aos-delay="300">
+          <img src="images/fav_fru4.jpg" alt="Apple">
+          <div class="info">
+            <h3>Apple</h3>
+            <p>Crisp and healthy every bite.</p>
+            <div class="actions">
+              <div class="qty"><button>-</button><span>1</span><button>+</button></div>
+              <button class="buy">249 EGP</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <div class="footer">
+      © 2025 Food Express. All rights reserved.
+    </div>
+
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    document.getElementById('themeToggle').onclick = () => {
+      document.body.classList.toggle('light-theme');
+    }
+  </script>
+</body>
+</html>
